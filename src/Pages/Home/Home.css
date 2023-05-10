@@ -1,0 +1,90 @@
+.posterImage{
+    height: 400px;
+}
+.posterImage > img{
+    width: 100%;
+    margin: auto;
+}
+
+.poster_overlay{
+    position: absolute;
+    padding: 4rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+   
+    transition: opacity .3s;
+}
+
+
+.poster_title{
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 0.4rem;
+}
+
+.movie_release{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.poster_rating{
+    margin-left: 3rem;
+}
+
+.poster_desc{
+    font-style: italic;
+    font-size: 1rem;
+    text-align: left;
+    width: 60%;
+}
+
+.fa-star{
+    color: rgb(255, 234, 0) !important ;
+}
+
+@media only screen and (max-width: 710px) {
+    .poster_title{
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 0.2rem;
+    }
+    .movie_release{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .poster_desc{
+       display: none;
+    }
+    .posterImage{
+        height: 300px;
+        
+    }
+    
+}
+@media screen and (max-width: 420px) {
+    .poster_desc{
+       display: none;
+    }
+    .posterImage{
+        height: 210px;
+    }
+    .poster_title{
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 0.2rem;
+    }
+
+    .movie_release{
+        font-size: 0.7rem;
+    }
+}
