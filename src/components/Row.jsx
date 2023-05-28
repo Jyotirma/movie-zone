@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './Row.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 const Row = ({id}) => {
 
     const api_key = `56137255ea81452ec54d1e656f3be830`
 
     const [latest, setLatest] = useState('')
-
-    // fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${api_key}&language=en-US&page=1`)
-    //         .then(res => res.json())
-    //         .then(data => setLatest(data))
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${id}/similar?api_key=${api_key}&language=en-US&page=1`)
@@ -27,7 +23,7 @@ const Row = ({id}) => {
       <div className='row-posters'>
         {/* row posters */}
         {latest && latest.results.map(movie => (
-            <Link to={`/movie/${movie.id}`} target="_blank" className='link' >
+            <Link href={`/movie/${movie.id}`} target="_blank" className='link' >
           <img
             key={movie.id}
             className= 'postersm'
@@ -37,8 +33,6 @@ const Row = ({id}) => {
         
       </div>
     </div>
-
-    {/* 2nd row */}
 
     
     </>

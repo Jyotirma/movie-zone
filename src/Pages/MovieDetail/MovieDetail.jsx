@@ -56,22 +56,6 @@ const MovieDetail = () => {
                 </div>
             </div>
             </div>
-            {/* <div className="production">
-                <h3>Production Company</h3>
-                {
-                    movie && movie.production_companies && movie.production_companies.map(c =>(
-                        <>
-                        {
-                            c.logo_path &&
-                            <span className='pimage'>
-                                <img src= {"https://image.tmdb.org/t/p/original" + c.logo_path}alt="" />
-                                <span>{c.name}</span>
-                            </span>
-                        }
-                        </>
-                    ))
-                }
-            </div> */}
         
       </div>
       <Row id={id}/>
