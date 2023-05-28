@@ -10,6 +10,8 @@ This is a Movie Web App built with React. It allows users to browse popular movi
 
 ## Demo
 
+You can visit the hosted site [here](https://movie-zone987.netlify.app)
+
 <img width="915" alt="image" src="https://github.com/Jyotirma/movie-zone/assets/111557860/734706ef-f4a2-4fd1-90f5-b2624df23f5c">
 
 ## Features
